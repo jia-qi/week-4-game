@@ -83,6 +83,7 @@
         <div class="col-md-3">
             <div class="your-score">
                 <p>Your score</p> 
+                <div class="newScore"></div>
             </div>                        
         </div>        
     </div>
@@ -97,11 +98,13 @@
 <script type="text/javascript">
 
 
-//global variables
+//global variables, keeping track of wins/losses
 var wins = 0;
 var losses = 0;
+    
 // players current score
-var addition = 0;
+var current = 0;
+    
 //selects a random number from 19 to 120
 //NEED EXPLANATION???!!!!!
 //Math.floor((Math.random()*120)+19) also generates above 120
@@ -113,9 +116,12 @@ var yellow= Math.floor((Math.random()*12)+1);
 var green= Math.floor((Math.random()*12)+1);
 var purple = Math.floor((Math.random()*12)+1); 
     
-//updates score in html
+    
+
+    
+//update the current score in html
   
-var updateScore = function (){
+var newCurrent = function (){
     $('addition').empty();
     $('.addition').append(addition);
     
@@ -126,14 +132,25 @@ var updateScore = function (){
     
     
     
-//restart function
+//3 restart function
 var restart = function(){
     addition = 0;
     total=Math.floor((Math.random()* 120) +19);
     
 }
 
+//4 
 
+var method = function() {
+    if ()
+}
+
+
+//5 function on click
+  $('#red').click(function(){
+      newScore=newScore + blue;
+      
+  })
 
 
 </script>
